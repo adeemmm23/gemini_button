@@ -26,6 +26,14 @@
   user-select: none;
   overflow: clip;
 }
+@keyframes gradient {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 .button::before {
   content: "";
@@ -51,13 +59,4 @@
 
 .button:hover::before {
   opacity: 0;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
